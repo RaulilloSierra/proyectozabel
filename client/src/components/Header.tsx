@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <header className="bg-white my-10">
@@ -6,7 +7,7 @@ function Header() {
           <div className="flex-1 md:flex md:items-center md:gap-12">
             <a className="block text-emerald-600" href="#">
               <span className="sr-only">Home</span>
-              <img src="./logo.png" alt="logo" className="my-10" />
+              <img src="./logo.png" alt="logo" className="my-10 w-20" />
             </a>
           </div>
 
@@ -14,29 +15,29 @@ function Header() {
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
-                  <a
+                  <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    to={"/"}
                   >
                     Inicio
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    to={"/nosotros"}
                   >
                     Nosotros
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    to={"/servicios"}
                   >
                     Servicios
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
@@ -49,21 +50,21 @@ function Header() {
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    to={"/testimonios"}
                   >
                     Testimonios
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    to={"/contacto"}
                   >
                     Contáctenos
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
